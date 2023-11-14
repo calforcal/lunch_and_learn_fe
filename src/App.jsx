@@ -1,22 +1,18 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import NavBar from './NavBar/NavBar.jsx';
-import Header from './Header/Header.jsx';
-import RecipeSearch from './RecipeSearch/RecipeSearch.jsx';
+import { Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home/Home.jsx';
+import RecipesPage from './Pages/RecipesPage/RecipesPage.jsx';
 
 function App() {
-  let headerContent = "Lunch and Learn"
   return (
     <>
-      <div>
-        <NavBar />
-        <Header>{headerContent}</Header>
-        <div>
-          <RecipeSearch />
-        </div>
-      </div>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/recipes' element={<RecipesPage>Thai</RecipesPage>} />
+      </Routes>
     </>
   )
 }
