@@ -1,6 +1,8 @@
+import "./Header.css"
+
 function Header({children}) {
   return (
-    <h1>{children}</h1>
+    <h1 className="Header">{children}</h1>
   );
 }
 
