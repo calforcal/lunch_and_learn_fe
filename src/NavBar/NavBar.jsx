@@ -1,9 +1,13 @@
+import "./NavBar.css"
+
 function NavBar() {
   return (
-    <ul>
-      <li>Home</li>
-      <li>Register</li>
-      <li>Log In</li>
+    <ul className="navList">
+      <li className="navItem"><a>Home</a></li>
+      <li className="navItem">|</li>
+      <li className="navItem"><a>Register</a></li>
+      <li className="navItem">|</li>
+      <li className="navItem"><a>Log In</a></li>
     </ul>
   );
 }
