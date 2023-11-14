@@ -1,12 +1,14 @@
+import "./RecipeSearch.css"
+
 function RecipeSearch() {
   return (
-    <div>
+    <div className="searchBox">
       <h4>Find Recipes By Country</h4>
       <div>
-        <input type="search" name="q"></input>
-        <button>Find Recipes</button>
+        <input className="search-bar" type="search" name="q"></input>
+        <button className="search-button">Find Recipes</button>
       </div>
-      <button>Choose Country For me!</button>
+      <button className="search-random">Choose Country For me!</button>
     </div>
   );
 }
