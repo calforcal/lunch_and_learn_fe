@@ -6,7 +6,6 @@ function Home() {
   let headerContent = "Lunch and Learn"
   return (
     <div>
-      <NavBar />
       <Header>{headerContent}</Header>
       <div>
         <RecipeSearch />
