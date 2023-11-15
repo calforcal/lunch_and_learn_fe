@@ -1,0 +1,8 @@
+.recipe-box {
+  width: 250px;
+  height: 250px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  margin: 50px;
+}
