@@ -1,8 +1,21 @@
-.recipe-box {
+.recipe-box-container {
+  position: relative;
+  text-align: center;
+  color: black;
+  margin: 50px;
+}
+
+.recipe-img {
   width: 250px;
   height: 250px;
   border-style: solid;
   border-width: 2px;
   border-color: black;
-  margin: 50px;
+}
+
+.favorite-icon {
+  position: absolute;
+  font-size: 30px;
+  bottom: 8px;
+  right: 16px;
 }
